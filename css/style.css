@@ -1,0 +1,154 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: var(--font-family);
+}
+
+/* ------------NAVBAR STARTS HERE------------- */
+#navbar ul li a{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 15px;
+line-height: 200%;
+color: #353535;
+text-transform: uppercase;
+padding: 18px 22px 5px;
+border-bottom:  1px solid transparent;
+position: relative;
+}
+#navbar ul li a::after{
+    content: "";
+    width: 0;
+    left: 0;
+    height: 1px;
+    background-color: #353535;
+    position: absolute;
+    bottom:0
+}
+
+#navbar ul li:hover a::after,
+#navbar ul li a.active::after{
+    border-bottom: 1px solid #353535;  
+    width: 100%;
+    transition: 0.3s;
+}
+
+
+/* ------------NAVBAR ENDS HERE------------------ */
+/* ================banner starts============== */
+#banner{
+   padding: 10px 69px;
+   margin: auto;
+}
+#banner .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+#banner .banner-text h4{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #353535;
+}
+#banner .banner-text h2{
+    font-family: var(--second-family);
+font-weight: 700;
+font-size: 64px;
+color: #353535;
+}
+#banner .banner-text p{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 190%;
+color: #353535;
+}
+#banner .banner-text .button{
+    padding-right: 45px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    
+}
+#banner .banner-text .button a.btn{
+    border-radius: 20px;
+width: 209px;
+height: 69px;
+background: #fc0;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+line-height: 180%;
+color: #fff;
+padding-top: 15px;
+margin-right: 20px;
+
+}
+#banner .banner-text a.btn:hover{
+    color: #000;
+    transition: 0.35s;
+}
+
+#banner .banner-text a.btn2{
+    border: 1px solid #000;
+border-radius: 20px;
+width: 209px;
+height: 69px;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+line-height: 180%;
+color: #353535;
+padding: 22px 22px;
+outline: 1px solid;
+}
+#banner .banner-text a.btn2:hover{
+background: #fc0;
+transition: 0.3ms;
+}
+.icon a{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 22px;
+line-height: 180%;
+color: #353535;
+ padding: 10px 10px 10px;
+ display: inline-block;
+ border-radius: 100%;
+
+}
+.icon a:hover{
+    color: blueviolet;
+    transition: 0.5ms;
+}
+.bannerimg img{
+    max-width: 100%;
+    padding: 30px 30px 20px 20px;
+}
+.icon2 a{
+    height: 40px;
+    width: 40px;
+    color: #000;
+    padding-right: 200px;
+    
+    
+}
+.icon2 a:hover{
+    color: rgb(30, 30, 160);
+    transition: 0.3s;
+}
+
+/* ====================banner ends============== */
